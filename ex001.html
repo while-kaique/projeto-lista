@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo programa em JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Analisador de Números</h1>
+    <div id="body">  
+        <p id="nume"> Número (1-100): 
+            <input type="number" name="num" id="num" min="1" max="100">
+            <input type="button" value="Adicionar" onclick="adicionar()">
+        </p>
+        <select multiple required name="lista" id="lista" size="6"> 
+        </select>
+        <p>
+            <input type="button" value="Finalizar" onclick="finalizar()">
+            <input type="reset" name="reset" id="reset">
+        </p>
+        <div style="padding: 10px; padding-left: 0px;" id="cad">
+            Prencha os dados!
+        </div>
+    </div>
+    <p id="kai">Criado por <a target="_blank" href="https://github.com/while-kaique"><strong>KaiCode</strong></a></p>
+    <script src="script.js"></script>
+
+</body>
+</html>
