@@ -3,6 +3,25 @@ let lista = document.querySelector('select#lista')
 let res = document.querySelector('div#cad')
 let valores = []
 
+function generateRandomInteger(max) {
+    return Math.floor(Math.random() * max) + 1;
+}
+
+let value1 = generateRandomInteger(255);
+let value2 = generateRandomInteger(255);
+let value3 = generateRandomInteger(255);
+let value4 = generateRandomInteger(255);
+
+let cor = window.document.querySelector('#body')
+function mudarCor() {
+    let value1 = generateRandomInteger(255);
+    let value2 = generateRandomInteger(255);
+    let value3 = generateRandomInteger(255);
+    cor.style.cssText = 
+    `background-color: rgb(${value1}, ${value2}, ${value3});`;
+}
+
+
 function isNumber(num) {
     if (num.value >= 1 && num.value <= 100 ){
         return true
